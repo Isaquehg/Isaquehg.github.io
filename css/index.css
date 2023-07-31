@@ -2,3 +2,43 @@ body{
     background-color: black;
     color: white;
 }
+header{
+    display: flex;
+    align-items: center;
+    margin-left: 3.5em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    background-color: transparent;
+    position: absolute; /* Position the header at the top of the viewport */
+    z-index: 100; /* Adjust the z-index value as needed */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#toolbar{
+    margin-left: 0.5em;
+}
+#toolbar a{
+    font-size: 1.22em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1.67em;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: font-size 0.3s ease;
+}
+#toolbar a:hover{
+    font-size: 1.29em; /* Change the scale factor to your desired size */
+}
+#landing{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url('../images/background-photo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter: brightness(70%);
+}
