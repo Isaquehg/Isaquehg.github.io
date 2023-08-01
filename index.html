@@ -21,62 +21,66 @@
     </header>
 
     <section  id="landing">
-        <p id="hello">HEY THERE!</p>
         <p id="phrase">"In order to mold our future, 
 an ongoing commitment to growth becomes essential, not just in Technology, but also within our very selves."</p>
-        <p id="scroll">Scroll Down</p>
-        <i class="fa-solid fa-angles-down" style="color: #ffffff;"></i>
+        <div id="scroll-container">
+            <p id="scroll">Scroll Down</p>
+            <i id="arrow" class="fa-solid fa-angles-down" style="color: #ffffff;"></i>
+        </div>
     </section>
 
     <section id="whoAmI">
-        <div>
+        <div id="bio-container">
             <h1>Who Am I</h1>
-            <p>I'm Isaquehg</p>
-            <p>First, let me introduce myself.
+            <p class="bio">First, let me introduce myself.
             My journey began in 2002 when I was born and raised with my family in a small town. This environment ignited the fire of innovation within me! In places like that, we don't have specialists or people who are specialized in things, so if something breaks or stops working, we have to figure it out ourselves.</p>
-            <p>After several years, I enrolled in university, majoring in Software Engineering. This opportunity allowed me to enhance my skills and gain hands-on experience working with technology. At Inatel, I learned from others through the vast network of experts that the institute offered.</p>
-            <p>And, of course, I can't forget to mention that I'm here for a purpose: to share the good news of Jesus Christ. None of this would have been possible without Him, and I'm grateful for His guidance in my journey thus far. I also extend my thanks to my family and friends who have supported me immensely throughout this path.</p>
-            <p>Alright, I've spoken quite a bit. So, who am I?
+            <p class="bio">After several years, I enrolled in university, majoring in Software Engineering. This opportunity allowed me to enhance my skills and gain hands-on experience working with technology. At Inatel, I learned from others through the vast network of experts that the institute offered.</p>
+            <p class="bio">And, of course, I can't forget to mention that I'm here for a purpose: to share the good news of Jesus Christ. None of this would have been possible without Him, and I'm grateful for His guidance in my journey thus far. I also extend my thanks to my family and friends who have supported me immensely throughout this path.</p>
+            <p class="bio">Alright, I've spoken quite a bit. So, who am I?
             I am an enthusiastic developer and Christian based in Brazil.
             My goal is to develop better technologies while traveling around the world and capturing moments through photography.
             My mission is to bring hope and salvation to the world through Jesus' Message!</p>
         </div>
     </section>
 
+    <hr>
+
     <section id="experience" class="partition">
         <h1>Experience</h1>
         <div id="xp1" class="xp">
-            <p>01</p>
+            <p class="number">01</p>
             <p>My first work experience started with in father's commerce. Working together, I could learn a lot! There are things we can't simply learn, but got to live it! It was that case. Starting from the factory floor until behind the scenes, I learned how things work.</p>
         </div>
 
         <div id="xp2" class="xp">
-            <p>02</p>
+            <p class="number">02</p>
             <p>My second stop point was the CREA Jr, in the Instituto Nacional de Telecomunicações (Inatel). CREA is like a engineering regulatory body in Brazil. The CREA Jr. was a fully student-run company, responsible to representate the official body in the Inatel. I worked a lot with documents and dealed with some sheets. It was a good entry point to my university activities.</p>
         </div>
 
         <div id="xp3" class="xp">
-            <p>03</p>
+            <p class="number">03</p>
             <p>At Inatel, now inside the Cybersecurity and Internet of Things laboratory(CS&I Lab), I worked in Deep Learning applied to Software Defined Radio, to create a model that reduces the signal's noise. It was my first experience in scientific research, so I could learn more how academic reasearch works and apply my Python, Numpy and TensorFlow skills.</p>
         </div>
 
         <div id="xp4" class="xp">
-            <p>04</p>
+            <p class="number">04</p>
             <p>After this experience with Deep Learning, I moved to the Cybersecurity field. This was challenging! I've never worked with security before. I started working in DTLS implementation in a NodeMCU. There, I could experiment international collaboration working with a french student, which helped me developening not only technical skills, but also intercultural ones.</p>
         </div>
 
         <div id="xp5" class="xp">
-            <p>05</p>
+            <p class="number">05</p>
             <p>Now, July, 23; I'm wonking in the Mobile Device Vulnerability Analysis research. In this field I could get a better sight about the "behind the scenes" of mobile apps. Understanding and mitigating attacks that are exponentially increasing in devices that are a tools for the modern society. Here, studies and applications about OWASP, NIST and other similar organizatinos guided us into the security implementation standards.</p>
         </div>
     </section>
 
+    <hr>
+
     <section id="skillset">
+        <h2>Skillset</h2>
+        <p id="skills-about">Here I will list some skills, divided into Languages, Technologies, Frameworks and Tools that I've used in some projects.</p>
         <div id="skillsContainer">
-            <h2>Skillset</h2>
-            <p>Here I will list some skills, divided into Languages, Technologies, Frameworks and Tools that I've used in some projects.</p>
-            <div id="languages">
-                <h3>Languages</h3>
+            <div id="languages" class="skills-cont">
+                <h3 class="topic">Languages</h3>
                 <ul>
                     <li>Python</li>
                     <li>Java</li>
@@ -87,8 +91,8 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
                     <li>LIsp/Clojure</li>
                 </ul>
             </div>
-            <div id="technologies">
-                <h3>Technologies</h3>
+            <div id="technologies" class="skills-cont">
+                <h3 class="topic">Technologies</h3>
                 <ul>
                     <li>MongoDB</li>
                     <li>MySQL</li>
@@ -100,8 +104,8 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
                     <li>Arduino/ESP</li>
                 </ul>
             </div>
-            <div id="frameworks">
-                <h3>Frameworks</h3>
+            <div id="frameworks" class="skills-cont">
+                <h3 class="topic">Frameworks</h3>
                 <ul>
                     <li>Python</li>
                     <li>FastAPI</li>
@@ -114,8 +118,8 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
                     <li>Bootstrap</li>
                 </ul>
             </div>
-            <div id="tools">
-                <h3>Tools</h3>
+            <div id="tools" class="skills-cont">
+                <h3 class="topic">Tools</h3>
                 <ul>
                     <li>Python</li>
                     <li>MobSF</li>
