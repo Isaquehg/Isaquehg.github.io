@@ -1,6 +1,7 @@
 body{
     background-color: black;
     color: white;
+    font-family: 'Times New Roman', Times, serif;
 }
 hr{
     margin-top: 5em;
@@ -45,6 +46,14 @@ header{
     flex-direction: column;
     filter: brightness(70%);
 }
+
+#phrase{
+    margin-top: 3em;
+    font-size: 1.5em;
+    text-align: center;
+    width: 24em;
+}
+
 #scroll{
     font-size: 1.3em;
 }
@@ -74,7 +83,7 @@ header{
 }
 #bio-container{
     padding-top: 1em;
-    max-width: 42em; /* Set a max-width to limit the content */
+    max-width: 45em; /* Set a max-width to limit the content */
     padding: 15em;
 }
 #bio-container h1{
@@ -84,23 +93,28 @@ header{
     font-size: 1.5em;
 }
 
-#experience {
+#experience h1{
+    font-size: 3.5em;
+    text-align: center;
+}
+
+#xp-container{
     display: flex;
     flex-direction: column; /* Set the direction of the flex items to column */
     align-items: flex-start; /* Align flex items to the left side */
 }
-#experience h1{
-    font-size: 3.5em;
-    margin-left: 9em;
-}
 
 .xp {
-    max-width: 35em; /* Set a max-width to limit the content */
-    margin-left: 3em; /* Optional: Add some margin between the "xp" divs */
-    margin-right: 3em;
-    margin-top: -3em;
-    padding: 0em; /* Optional: Add some padding around the content */
-    font-size: 1.6em;
+    width: 38em; /* Set width to limit the content */
+    margin-left: 2em; /* Optional: Add some margin between the "xp" divs */
+    margin-right: 2em;
+    margin-top: 1em;
+    font-size: 1.5em;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
 }
 
 .xp:nth-child(odd) {
@@ -115,8 +129,7 @@ header{
 }
 
 .number{
-    font-size: 3em;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 1.8em;
 }
 
 #skillset{
@@ -125,7 +138,7 @@ header{
     align-items: center;
 }
 
-#skillset h2{
+#skillset h1{
     font-size: 3.5em;
 }
 
@@ -150,4 +163,52 @@ li{
 .skills-cont{
     margin: 1em;
     padding: 1em;
+}
+
+#theGospel h1{
+    font-size: 3.5em;
+    text-align: center;
+}
+#theGospel {
+    padding: 3em 0;
+}
+
+.gospel-container {
+    display: flex;
+    flex-direction: column; /* Set the direction of the flex items to column */
+    align-items: flex-start;
+}
+
+.gospel {
+    padding: 1em;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: white;
+    width: 58em;
+}
+
+/* Apply alternating styles to the sections */
+.gospel:nth-child(odd) {
+    /* Align left for odd-numbered sections */
+    align-self: flex-start;
+    text-align: left;
+}
+
+.gospel:nth-child(even) {
+    /* Align right for even-numbered sections */
+    align-self: flex-end;
+    text-align: right;
+}
+
+/* Style h2 tags inside the sections */
+.gospel h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.gospel p {
+    font-size: 1.5em;
 }
