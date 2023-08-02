@@ -16,3 +16,37 @@ navLinks.forEach(link => {
         smoothScroll(target);
     });
 });
+
+// Function to handle smooth scrolling to the selected section
+function smoothScroll(target) {
+    const element = document.getElementById(target);
+    const yOffset = -60; // Adjust this value to fine-tune the scroll position
+    const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+}
+
+// Event listener for the "Scroll Down" link
+const scrollLink = document.querySelector('#scroll-container a');
+
+scrollLink.addEventListener('click', event => {
+    event.preventDefault();
+    const target = scrollLink.getAttribute('href').substring(1); // Get the href value without the leading '#'
+    smoothScroll(target);
+});
+
+// Function to handle smooth scrolling to the selected section
+function smoothScroll(target) {
+    const element = document.getElementById(target);
+    const yOffset = -60; // Adjust this value to fine-tune the scroll position
+    const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+}
+
+// Event listener for the "Scroll Down" link
+const scrollLink_logo = document.querySelector('#link-logo');
+
+scrollLink_logo.addEventListener('click', event => {
+    event.preventDefault();
+    const target = scrollLink_logo.getAttribute('href').substring(1); // Get the href value without the leading '#'
+    smoothScroll(target);
+});

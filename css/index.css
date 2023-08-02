@@ -1,7 +1,7 @@
 body{
     background-color: black;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 hr{
     margin-top: 5em;
@@ -19,8 +19,14 @@ header{
     top: 0;
     left: 0;
 }
+#logo{
+    transition: transform 0.2s ease;
+}
+#logo{
+    transform: scale(1.1);
+}
 #toolbar{
-    margin-left: 0em;
+    margin-left: 0.5em;
 }
 #toolbar a{
     font-size: 1.22em;
@@ -52,28 +58,49 @@ header{
     font-size: 1.5em;
     text-align: center;
     width: 24em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #scroll{
     font-size: 1.3em;
 }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 #arrow{
-    font-size: 2.8em;
+    font-size: 3.5em;
+    animation: bounce 2s infinite;
     color: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+}
+#arrow-container{
+    padding: 3em;
+    padding-left: 20em;
+    padding-right: 25em;
 }
 #scroll-container{
     padding-top: 2em;
-    margin-top: 1em;
+    padding: 2em; /* Increase the padding to expand the hit area */
+    margin: 1em;
+    margin-top: 25.8em;
     display: flex; /* Use Flexbox */
     flex-direction: column; /* Stack the elements vertically */
     align-items: center; /* Align items along the center horizontally */
     justify-content: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
     position: absolute;
-    transform: translateY(100%);
 }
 #scroll-container:hover{
-    transform: scale(1.1);
+    transform: scaleY(1.08);
+}
+#link-scroll{
+    text-decoration: none;
 }
 #whoAmI{
     display: flex;
@@ -211,4 +238,78 @@ li{
 
 .gospel p {
     font-size: 1.5em;
+}
+
+#contactMe{
+    text-align: center;
+    font-size: 3.5em;
+}
+
+#contactMe-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em 0;
+}
+
+#contacts-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact{
+    transition: transform 0.2s ease;
+}
+.contact:hover{
+    transform: scale(1.1);
+}
+
+/* Style the contact links */
+.contact a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Add some space between the icon and text */
+.contact i {
+    margin-right: 0.5em;
+}
+
+a span{
+    font-size: 1.5em;
+}
+
+a i{
+    font-size: 2em;
+}
+
+#linkedin-icon{
+    color: blue;
+}
+#email-icon{
+    color: blue;
+}
+#spotify-icon{
+    color: green;
+}
+
+#stack-icon{
+    color: orange;
+}
+#youtube-icon{
+    color: red;
 }

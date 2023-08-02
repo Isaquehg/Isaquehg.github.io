@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <img src="images/isaquehg-logo-removebg-preview.png" alt="isaquehg" height="120" width="120">
+        <a id="link-logo" href="#contactMe"><img id="logo" src="images/isaquehg-logo-removebg-preview.png" alt="isaquehg" height="125" width="125"></a>
         <nav id="toolbar">
             <a href="#whoAmI">Who Am I</a>
             <a href="#experience">Experience</a>
@@ -24,8 +24,11 @@
         <p id="phrase">"In order to mold our future, 
 an ongoing commitment to growth becomes essential, not just in Technology, but also within our very selves."</p>
         <div id="scroll-container">
-            <p id="scroll">Scroll Down</p>
-            <i id="arrow" class="fa-solid fa-angles-down" style="color: #ffffff;"></i>
+            <a href="#whoAmI">
+                <div id="arrow-container">
+                    <i id="arrow" class="fa-solid fa-angles-down" style="color: #ffffff;"></i>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -140,6 +143,8 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
         </div>
     </section>
 
+    <hr>
+
     <section id="theGospel">
         <h1>The Gospel</h1>
         <div class="gospel-container">
@@ -170,21 +175,60 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
         </div>
     </section>
 
+    <hr>
+
     <section id="gallery">
 
     </section>
 
-    <section id="contactMe">
+    <hr>
+
+    <section id="contactMe-section">
         <h1 id="contactMe">Contact Me</h1>
-        <div>
-            <ul>
-                <li><i>Linkedin</i></li>
-                <li><i>Gmail</i></li>
-                <li><i>Outlook</i></li>
-                <li><i>YouTube</i></li>
-            </ul>
+        <div id="contacts-container">
+            <div class="contact-column">
+                <div class="contact">
+                    <a href="www.linkedin.com/in/isaque-hollanda-gonçalves-37991021a">
+                        <i id="linkedin-icon" class="fa-brands fa-linkedin"></i>
+                        <span>Linkedin</span>
+                    </a>
+                </div>
+                <div class="contact">
+                    <a href="https://github.com/Isaquehg">
+                        <i id="github-icon" class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+                <div class="contact">
+                    <a href="https://www.youtube.com/channel/UCe_6hKi_673tYPV7gAlupMg">
+                        <i id="youtube-icon" class="fa-brands fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-column">
+                <div class="contact">
+                    <a href="mailto:isaque.h@ges.inatel.br">
+                        <i id="email-icon" class="fa-solid fa-envelope"></i>
+                        <span>Send Email</span>
+                    </a>
+                </div>
+                <div class="contact">
+                    <a href="https://open.spotify.com/user/bsn2znqbdujksjaq6von7urr8?si=391904def2124645">
+                        <i id="spotify-icon" class="fa-brands fa-spotify"></i>
+                        <span>Spotify</span>
+                    </a>
+                </div>
+                <div class="contact">
+                    <a href="https://stackoverflow.com/users/15172122/isaquehg">
+                        <i id="stack-icon" class="fa-brands fa-stack-overflow"></i>
+                        <span>Stack Overflow</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
+    
     <script src="js/scroll.js" defer></script>
 </body>
 </html>
