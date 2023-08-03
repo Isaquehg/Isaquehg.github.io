@@ -15,7 +15,7 @@
             <a href="#experience">Experience</a>
             <a href="#skillset">Skillset</a>
             <a href="#theGospel">The Gospel</a>
-            <a href="#gallery">Photographic Insights</a>
+            <a href="#gallery">Gallery</a>
             <a href="#contactMe">Contact Me</a>
         </nav>
     </header>
@@ -165,7 +165,7 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
 
             <div id="andU" class="gospel">
                 <h2>And You?</h2>
-                <p>Have you ever wondered about this? I would like you think about the purpose of your work and life. And if you feel without purpose, I invite you to follow Jesus Christ ;) Only Jesus can give us the direction and is able to save. In Matthew 16:26 says: "What good will it be for someone to gain the whole world, yet forfeit their soul? Or what can anyone give in exchange for their soul?".</p>
+                <p>Have you ever wondered about this? I would like you think about the purpose of your work and life. And if you feel without purpose, I invite you to follow Jesus Christ. Only Jesus can give us the direction and is able to save. In Matthew 16:26 says: "What good will it be for someone to gain the whole world, yet forfeit their soul? Or what can anyone give in exchange for their soul?".</p>
             </div>
 
             <div id="theMessage" class="gospel">
@@ -178,8 +178,31 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
     <hr>
 
     <section id="gallery">
-
+        <div id="photoGallery"></div>
     </section>
+    
+    <script>
+        const API_KEY = 'RdR7DbWGG33IExQ3n5QQCyld6fibGaQzLhGGdEOKE0RQduGjOXYrcmtr';
+        const galleryContainer = document.getElementById('photoGallery');
+
+        // Fetch your uploaded photos from Pexels API
+        fetch('https://api.pexels.com/v1/collections/my_website-cin25rn', {
+            headers: {
+                'Authorization': API_KEY
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Display the photos in the gallery
+            data.photos.forEach(photo => {
+                const img = document.createElement('img');
+                img.src = photo.src.medium;
+                img.alt = photo.photographer;
+                galleryContainer.appendChild(img);
+            });
+        })
+        .catch(error => console.error('Error fetching photos:', error));
+    </script>
 
     <hr>
 
