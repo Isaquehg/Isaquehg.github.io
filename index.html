@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div id="menu-toggle"><i id="toogle-icon" class="fa-solid fa-bars"></i></div>
+        <button id="menu-toggle" onclick="openNav()"><i id="toogle-icon" class="fa-solid fa-bars"></i></button>
         <div id="logo-container"><a id="link-logo" href="#contactMe"><img id="logo" src="images/isaquehg-logo-removebg-preview.png" alt="isaquehg" height="125" width="125"></a></div>
         <nav id="toolbar">
             <a href="#whoAmI">Who Am I</a>
@@ -85,61 +85,65 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
         <h1>Skillset</h1>
         <p id="skills-about">Here I will list some skills, divided into Languages, Technologies, Frameworks and Tools that I've used in some projects.</p>
         <div id="skillsContainer">
-            <div id="languages" class="skills-cont">
-                <h3 class="topic">Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C++</li>
-                    <li>Javascript</li>
-                    <li>SQL</li>
-                    <li>HTML/CSS</li>
-                    <li>LIsp/Clojure</li>
-                </ul>
+            <div id="first-row" class="skill-row">
+                <div id="languages" class="skills-cont">
+                    <h3 class="topic">Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C++</li>
+                        <li>Javascript</li>
+                        <li>SQL</li>
+                        <li>HTML/CSS</li>
+                        <li>LIsp/Clojure</li>
+                    </ul>
+                </div>
+                <div id="frameworks" class="skills-cont">
+                    <h3 class="topic">Frameworks</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>FastAPI</li>
+                        <li>Django</li>
+                        <li>Flask</li>
+                        <li>Android</li>
+                        <li>Keras/TensorFlow</li>
+                        <li>SciKit Learn</li>
+                        <li>React/Next Js</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
             </div>
-            <div id="technologies" class="skills-cont">
-                <h3 class="topic">Technologies</h3>
-                <ul>
-                    <li>MongoDB</li>
-                    <li>MySQL</li>
-                    <li>Android Studio</li>
-                    <li>AWS EC2</li>
-                    <li>AWS IoT Core</li>
-                    <li>Docker</li>
-                    <li>MQTT</li>
-                    <li>Arduino/ESP</li>
-                </ul>
-            </div>
-            <div id="frameworks" class="skills-cont">
-                <h3 class="topic">Frameworks</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>FastAPI</li>
-                    <li>Django</li>
-                    <li>Flask</li>
-                    <li>Android</li>
-                    <li>Keras/TensorFlow</li>
-                    <li>SciKit Learn</li>
-                    <li>React/Next Js</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            <div id="tools" class="skills-cont">
-                <h3 class="topic">Tools</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>MobSF</li>
-                    <li>Burp Suite</li>
-                    <li>Wireshark</li>
-                    <li>Bash</li>
-                    <li>Postman</li>
-                    <li>MongoDB Atlas</li>
-                    <li> MySQL Workbench</li>
-                    <li>Adobe Premiere</li>
-                    <li>Adobe Lightroom</li>
-                    <li>Canva</li>
-                    <li>Microsoft Office</li>
-                </ul>
+            <div id="second-row" class="skill-row">
+                <div id="technologies" class="skills-cont">
+                    <h3 class="topic">Technologies</h3>
+                    <ul>
+                        <li>MongoDB</li>
+                        <li>MySQL</li>
+                        <li>Android Studio</li>
+                        <li>AWS EC2</li>
+                        <li>AWS IoT Core</li>
+                        <li>Docker</li>
+                        <li>MQTT</li>
+                        <li>Arduino/ESP</li>
+                    </ul>
+                </div>
+                <div id="tools" class="skills-row">
+                    <h3 class="topic">Tools</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>MobSF</li>
+                        <li>Burp Suite</li>
+                        <li>Wireshark</li>
+                        <li>Bash</li>
+                        <li>Postman</li>
+                        <li>MongoDB Atlas</li>
+                        <li> MySQL Workbench</li>
+                        <li>Adobe Premiere</li>
+                        <li>Adobe Lightroom</li>
+                        <li>Canva</li>
+                        <li>Microsoft Office</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -253,13 +257,18 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
         </div>
     </section>
 
-    <div id="side-drawer">
-        <a href="#whoAmI">Who Am I</a>
-        <a href="#experience">Experience</a>
-        <a href="#skillset">Skillset</a>
-        <a href="#theGospel">The Gospel</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contactMe">Contact Me</a>
+    <div id="sidebar">
+        <div id="column-1">
+            <a href="#whoAmI">Who Am I</a>
+            <a href="#experience">Experience</a>
+            <a href="#skillset">Skillset</a>
+            <a href="#theGospel">The Gospel</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contactMe">Contact Me</a>
+        </div>
+        <div id="column-2">
+            <button onclick="closeNav()">X</button>
+        </div>
     </div>
     
     <script src="js/scroll.js" defer></script>

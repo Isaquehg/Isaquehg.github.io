@@ -51,14 +51,14 @@ scrollLink_logo.addEventListener('click', event => {
     smoothScroll(target);
 });
 
-// Get references to the elements
-const menuButton = document.getElementById("menu-button");
-const sideDrawer = document.getElementById("side-drawer");
-
-// Add an event listener to the menu button
-menuButton.addEventListener("click", toggleMenu);
-
-// Function to toggle the side menu
-function toggleMenu() {
-    sideDrawer.classList.toggle("open"); // Add or remove the "open" class
+// Sidebar function
+function openNav() {
+    document.getElementById("sidebar").style.width = "350px";
+    document.getElementById("toogle-icon").style.display = "none";
 }
+  
+  /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("toogle-icon").style.display = "block";
+  }

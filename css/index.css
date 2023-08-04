@@ -313,7 +313,7 @@ a i{
 }
 
 @media screen and (min-width: 1100px) {
-    #menu-toggle{
+    #sidebar{
         display: none;
     }
 }
@@ -389,16 +389,7 @@ a i{
     }
 
     .gospel, .xp{
-        width: 50%;
-    }
-
-    #skillsContainer{
-        width: 70%;
-        flex-direction: column;
-    }
-    
-    .skills-cont{
-        width: 50%;
+        width: 62%;
     }
 
     #whoAmI{
@@ -416,35 +407,71 @@ a i{
         font-size: 2.4em;
         width: 700px;
     }
-}
 
-/* Position and style the side drawer */
-#side-drawer {
-    background-color: rgba(0, 0, 0, 0.9); /* Adjust background color as needed */
-    width: 250px; /* Set the width of the side drawer */
-    height: 100%; /* Cover the entire screen height */
-    position: fixed;
-    top: 0;
-    left: -350px; /* Initially hide the side drawer off the screen */
-    z-index: 200; /* Ensure it's above other elements */
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: left 0.3s ease; /* Add a smooth transition effect */
-}
-  
-/* Style the links inside the side drawer */
-#side-drawer a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    margin: 0.5em 0;
-}
-  
-/* Show the side drawer when it's open */
-.side-drawer-open {
-    left: 0;
+    #skillsContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3em 0;
+        
+    } 
+    #skills-about{
+        font-size: 2em;
+        text-align: center;
+        width: 700px;
+    }
+    .skill-row{
+        display: flex;
+        flex-direction: row;
+    }
+    li{
+        font-size: 2em;
+    }
+
+    hr{
+        width: 880px;
+        align-items: center;
+    }
+    button{
+        background-color: transparent;
+        color: white;
+        text-decoration: none;
+        border-color: transparent;
+    }
+    #sidebar{
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 200; /* Stay on top */
+        top: 0;
+        left: 0;
+        background-color: #000000; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #column-1{
+        display: flex;
+        flex-direction: column;
+        padding-left: 1em;
+    }
+    #sidebar a{
+        text-decoration: none;
+        color: white;
+        font-size: 2.5em;
+        padding-top: 1em;
+        
+    }
+    #column-2{
+        padding: 2em;
+    }
+    #column-2 button{
+        font-size: 3em;
+    }
 }
   
