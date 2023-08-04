@@ -337,11 +337,7 @@ a i{
     }
 
     section{
-        width: 950px;
-    }
-
-    #menu-toggle {
-        
+        width: 920px;
     }
 
     #logo-container {
@@ -359,8 +355,8 @@ a i{
 
     #phrase{
         margin-top: 0;
-        padding-bottom: 20em;
-        font-size: 1.7em;
+        padding-bottom: 22em;
+        font-size: 1.8em;
     }
 
 
@@ -371,7 +367,7 @@ a i{
         background-position: 50% 100%;
         background-repeat: no-repeat;
         height: 150vh;
-        width: 950px;
+        width: 930px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -405,8 +401,20 @@ a i{
         width: 50%;
     }
 
-    body{
-        background-color: blueviolet;
+    #whoAmI{
+        height: max-content;
+    }
+    #bio-container{
+        max-width: fit-content;
+        height: fit-content;
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 8em;
+        padding-bottom: 0;
+    }
+    .bio{
+        font-size: 2.4em;
+        width: 700px;
     }
 }
 
