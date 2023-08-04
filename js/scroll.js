@@ -50,3 +50,15 @@ scrollLink_logo.addEventListener('click', event => {
     const target = scrollLink_logo.getAttribute('href').substring(1); // Get the href value without the leading '#'
     smoothScroll(target);
 });
+
+// Get references to the elements
+const menuButton = document.getElementById("menu-button");
+const sideDrawer = document.getElementById("side-drawer");
+
+// Add an event listener to the menu button
+menuButton.addEventListener("click", toggleMenu);
+
+// Function to toggle the side menu
+function toggleMenu() {
+    sideDrawer.classList.toggle("open"); // Add or remove the "open" class
+}

@@ -1,7 +1,7 @@
 body{
     background-color: black;
     color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif'
 }
 hr{
     margin-top: 5em;
@@ -10,8 +10,7 @@ hr{
 header{
     display: flex;
     align-items: center;
-    margin-left: 4.2em;
-    padding-left: 1em;
+    padding-left: 6em;
     padding-bottom: 1em;
     background-color: transparent;
     position: absolute; /* Position the header at the top of the viewport */
@@ -77,12 +76,11 @@ header{
 #arrow{
     font-size: 3.5em;
     animation: bounce 2s infinite;
-    color: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
 }
 #arrow-container{
     padding: 3em;
-    padding-left: 20em;
-    padding-right: 25em;
+    padding-left: 30em;
+    padding-right: 30em;
 }
 #scroll-container{
     padding-top: 2em;
@@ -313,3 +311,132 @@ a i{
 #youtube-icon{
     color: red;
 }
+
+@media screen and (min-width: 1100px) {
+    #menu-toggle{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    #toolbar {
+        display: none;
+    }
+    
+    header{
+        justify-content: space-between;
+        width: 844px;
+        /*background-color: black;*/
+        display: flex;
+        align-items: center;
+        padding-bottom: 1em;
+        background-color: transparent;
+        position: absolute; /* Position the header at the top of the viewport */
+        z-index: 100; /* Adjust the z-index value as needed */
+        top: 0;
+    }
+
+    section{
+        width: 950px;
+    }
+
+    #menu-toggle {
+        
+    }
+
+    #logo-container {
+        flex: 0.7;
+    }
+
+    #toogle-icon{
+        font-size: 3.5em;
+    }
+
+    #logo{
+        width: 230px;
+        height: 230px;
+    }
+
+    #phrase{
+        margin-top: 0;
+        padding-bottom: 20em;
+        font-size: 1.7em;
+    }
+
+
+    #landing{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black), url('../images/background-photo-vertical.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        height: 150vh;
+        width: 950px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        filter: brightness(70%);
+    }
+    #scroll-container{
+        width: 50%;
+        padding-top: 35em;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+    #arrow-container{
+        width: 50%;
+        padding: 0;
+    }
+    #arrow{
+        font-size: 6em;
+    }
+
+    .gospel, .xp{
+        width: 50%;
+    }
+
+    #skillsContainer{
+        width: 70%;
+        flex-direction: column;
+    }
+    
+    .skills-cont{
+        width: 50%;
+    }
+
+    body{
+        background-color: blueviolet;
+    }
+}
+
+/* Position and style the side drawer */
+#side-drawer {
+    background-color: rgba(0, 0, 0, 0.9); /* Adjust background color as needed */
+    width: 250px; /* Set the width of the side drawer */
+    height: 100%; /* Cover the entire screen height */
+    position: fixed;
+    top: 0;
+    left: -350px; /* Initially hide the side drawer off the screen */
+    z-index: 200; /* Ensure it's above other elements */
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease; /* Add a smooth transition effect */
+}
+  
+/* Style the links inside the side drawer */
+#side-drawer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+  
+/* Show the side drawer when it's open */
+.side-drawer-open {
+    left: 0;
+}
+  

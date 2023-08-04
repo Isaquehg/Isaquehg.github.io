@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <a id="link-logo" href="#contactMe"><img id="logo" src="images/isaquehg-logo-removebg-preview.png" alt="isaquehg" height="125" width="125"></a>
+        <div id="menu-toggle"><i id="toogle-icon" class="fa-solid fa-bars"></i></div>
+        <div id="logo-container"><a id="link-logo" href="#contactMe"><img id="logo" src="images/isaquehg-logo-removebg-preview.png" alt="isaquehg" height="125" width="125"></a></div>
         <nav id="toolbar">
             <a href="#whoAmI">Who Am I</a>
             <a href="#experience">Experience</a>
@@ -35,14 +36,14 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
     <section id="whoAmI">
         <div id="bio-container">
             <h1>Who Am I</h1>
-            <p class="bio">First, let me introduce myself.
-            My journey began in 2002 when I was born and raised with my family in a small town. This environment ignited the fire of innovation within me! In places like that, we don't have specialists or people who are specialized in things, so if something breaks or stops working, we have to figure it out ourselves.</p>
-            <p class="bio">After several years, I enrolled in university, majoring in Software Engineering. This opportunity allowed me to enhance my skills and gain hands-on experience working with technology. At Inatel, I learned from others through the vast network of experts that the institute offered.</p>
-            <p class="bio">And, of course, I can't forget to mention that I'm here for a purpose: to share the good news of Jesus Christ. None of this would have been possible without Him, and I'm grateful for His guidance in my journey thus far. I also extend my thanks to my family and friends who have supported me immensely throughout this path.</p>
-            <p class="bio">Alright, I've spoken quite a bit. So, who am I?
+            <p class="bio">
             I am an enthusiastic developer and Christian based in Brazil.
             My goal is to develop better technologies while traveling around the world and capturing moments through photography.
-            My mission is to bring hope and salvation to the world through Jesus' Message!</p>
+            My mission is to carry the Message of Jesus about Hope and Salvation to the world!</p>
+            <p class="bio">
+            My journey began in 2002, growing up in a small town surrounded by my family. This humble environment sparked the flames of innovation within me from a young age. In such places, we didn't have access to specialists or experts, so we had to rely on our own criativity to overcome challenges and fix things. This instilled in me a deep curiosity about how the world works and the drive to find creative solutions to problems.</p>
+            <p class="bio">Years later, I embarked on an exciting educational path, enrolling in university to pursue a degree in Software Engineering. This invaluable opportunity allowed me to refine my skills and gain hands-on experience working with cutting-edge technology. At Inatel, I had the privilege of learning from a vast network of experts, enriching my understanding and expertise.</p>
+            <p class="bio">However, my journey is not solely defined by technical pursuits. Above all, I am driven by a higher purpose: to share the life-changing message of Jesus Christ. None of my achievements and growth would be possible without His guidance and grace. I am deeply grateful for His presence in my life, and I extend my heartfelt thanks to my family and friends, whose unwavering support has been a source of strength throughout this transformative path.</p>
         </div>
     </section>
 
@@ -182,7 +183,7 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
     </section>
     
     <script>
-        const API_KEY = 'RdR7DbWGG33IExQ3n5QQCyld6fibGaQzLhGGdEOKE0RQduGjOXYrcmtr';
+        /*const API_KEY = 'RdR7DbWGG33IExQ3n5QQCyld6fibGaQzLhGGdEOKE0RQduGjOXYrcmtr';
         const galleryContainer = document.getElementById('photoGallery');
 
         // Fetch your uploaded photos from Pexels API
@@ -201,7 +202,7 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
                 galleryContainer.appendChild(img);
             });
         })
-        .catch(error => console.error('Error fetching photos:', error));
+        .catch(error => console.error('Error fetching photos:', error));*/
     </script>
 
     <hr>
@@ -251,6 +252,15 @@ an ongoing commitment to growth becomes essential, not just in Technology, but a
             </div>
         </div>
     </section>
+
+    <div id="side-drawer">
+        <a href="#whoAmI">Who Am I</a>
+        <a href="#experience">Experience</a>
+        <a href="#skillset">Skillset</a>
+        <a href="#theGospel">The Gospel</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contactMe">Contact Me</a>
+    </div>
     
     <script src="js/scroll.js" defer></script>
 </body>
