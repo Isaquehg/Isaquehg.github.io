@@ -238,6 +238,35 @@ li{
     font-size: 1.5em;
 }
 
+#gallery-section h1{
+    justify-content: center;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+#vertical{
+    grid-row: span 2; /* This will make the vertical image span two rows */
+}
+.patern{
+
+    object-fit: cover;
+}
+
+
 #contactMe{
     text-align: center;
     font-size: 3.5em;
