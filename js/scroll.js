@@ -45,12 +45,6 @@ function smoothScroll(target) {
 // Event listener for the "Scroll Down" link
 const scrollLink_logo = document.querySelector('#link-logo');
 
-scrollLink_logo.addEventListener('click', event => {
-    event.preventDefault();
-    const target = scrollLink_logo.getAttribute('href').substring(1); // Get the href value without the leading '#'
-    smoothScroll(target);
-});
-
 // Sidebar function
 function openNav() {
     document.getElementById("sidebar").style.width = "350px";

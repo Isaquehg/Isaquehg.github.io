@@ -504,6 +504,7 @@ a i{
     }
     #column-2 button{
         font-size: 3em;
+        cursor: pointer;
     }
 }
   
